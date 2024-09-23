@@ -5,11 +5,11 @@ const appConfig = useAppConfig()
 <template>
   <footer class="border-t-2 border-background py-10 dark:border-foreground">
     <div class="container flex flex-col items-stretch gap-3 sm:flex-row sm:justify-between">
-      <div class="sm: order-2 sm:-order-1">
+      <div class="sm: order-2 text-center sm:-order-1 sm:text-start">
         <p class="text-2xl">{{ appConfig.title }}</p>
         <p class="text-md text-caption">&copy; Kirill Stepkin {{ new Date().getFullYear() }}</p>
       </div>
-      <div class="flex flex-col items-stretch">
+      <div class="flex flex-col items-center sm:items-stretch">
         <a
           href="https://vk.com/kirillzeret"
           rel="noreferrer"

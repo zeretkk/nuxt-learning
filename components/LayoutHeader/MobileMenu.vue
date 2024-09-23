@@ -14,7 +14,10 @@ defineEmits(['closeMenu'])
     leave-from-class="translate-y-[0%]"
     leave-to-class="translate-y-[-100%]"
   >
-    <div class="absolute left-0 top-0 flex h-dvh w-dvw flex-col bg-background p-2.5" v-if="isOpen">
+    <div
+      class="absolute left-0 top-0 flex h-dvh w-dvw flex-col bg-foreground p-2.5 dark:bg-background"
+      v-if="isOpen"
+    >
       <div class="flex flex-row justify-end">
         <button @click="$emit('closeMenu')" aria-label="Close">
           <Icon name="tabler:x" class="text-2xl" />
